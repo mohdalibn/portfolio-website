@@ -1,7 +1,9 @@
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
-import { Card, CardContent } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
+import Experience from "./tabs/Experience"
+import Education from "./tabs/Education"
+import Skills from "./tabs/Skills"
+import Certifications from "./tabs/Certifications"
 
 export default function About(){
 
@@ -22,8 +24,8 @@ export default function About(){
           </div>
 
           <Tabs defaultValue="skills" className="mt-12">
-            <TabsList className="w-full p-1 bg-gray-100 dark:bg-gray-800 rounded-lg">
-              {["skills", "education", "experience"].map((tab) => (
+            <TabsList className="w-full p-1 bg-gray-100 dark:bg-gray-800 rounded-lg flex flex-wrap justify-center">
+              {["skills", "education", "experience", "certifications"].map((tab) => (
                 <TabsTrigger
                   key={tab}
                   value={tab}
@@ -33,116 +35,16 @@ export default function About(){
               ))}
             </TabsList>
             <TabsContent value="skills">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-6">Technical Skills</h3>
-                  <div className="space-y-6">
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Languages</h4>
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {["Python", "Java", "HTML", "CSS", "JavaScript", "C/C++", "SQLite", "MongoDB"].map((skill) => (
-                          <Badge key={skill} variant="outline">{skill}</Badge>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Libraries & Frameworks</h4>
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {["React", "Next.js", "Express", "Node.js", "Fast API", "OpenCV", "Mediapipe", "Tkinter", "PyGame", "Pandas", "Scikit-learn", "Streamlit"].map((skill) => (
-                          <Badge key={skill} variant="secondary">{skill}</Badge>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Developer Tools</h4>
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {["VS Code", "PyCharm", "Jupyter", "Git", "Linux", "Unit Testing", "Docker", "Postman", "Figma"].map((skill) => (
-                          <Badge key={skill} variant="secondary">{skill}</Badge>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">DevOps</h4>
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {["Git", "Github", "Github Actions", "Github Projects", "Jira", "BitBucket", "Docker", "AWS"].map((skill) => (
-                          <Badge key={skill} variant="secondary">{skill}</Badge>
-                        ))}
-                      </div>
-                    </div>
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Areas of Interest</h4>
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {["Full-Stack Web Development", "AI/ML Applications", "Computer Vision", "Data Analysis", "UI/UX Design"].map((skill) => (
-                          <Badge key={skill} variant="secondary">{skill}</Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <Skills/>
             </TabsContent>
             <TabsContent value="education">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">Education</h3>
-                  <div className="space-y-4">
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="font-semibold text-lg border-b border-gray-400 dark:border-gray-700 pb-2">Bachelor of Science in Computer Science (Smart Systems)</h4>
-                      <p className="text-base text-gray-600 dark:text-gray-400 pt-2">Memorial University of Newfoundland</p>
-                      <p className="text-base">May 2022 - Present</p>
-                      <p className="text-base mt-2">Year 3 (Junior Year)</p>
-                      <p className="text-base">GPA: 3.6</p>
-                      <div className="flex flex-wrap gap-2 pt-2">
-                        {["Object-Oriented Programming", "Data Structure & Algorithms", "Machine Learning", "Visual Computing", "Web Development", "Ethics", "Computer Networking", "Operating Systems", "Computer Architeture", "Sofware Engineering", "Game Programming", "RDMS", "Nature-Inspired Computing", "Algorithms Techniques for AI"].map((skill) => (
-                          <Badge key={skill} variant="outline">{skill}</Badge>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <Education/>
             </TabsContent>
             <TabsContent value="experience">
-              <Card>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-4">Work Experience</h3>
-                  <div className="space-y-6">
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="font-semibold text-lg border-b border-gray-400 dark:border-gray-700 pb-2">Full-Stack Software Engineer</h4>
-                      <p className="text-base text-gray-600 dark:text-gray-400 pt-2">NutraForge Technologies</p>
-                      <p className="text-base">June 2024 - Present</p>
-                      {/* <p className="text-base text-gray-600 dark:text-gray-400 pt-2">Developed user-friendly interfaces for an AI-driven nutrition tracking platform using Next.js, React, and Material UI</p>
-                      <p className="text-base text-gray-600 dark:text-gray-400 pt-2">Utilized Firebase for real-time synchronization and authentication</p>
-                      <p className="text-base text-gray-600 dark:text-gray-400 pt-2">Containerized applications with Docker and deployed via GitHub and AWS</p> */}
-                      <ul className="list-disc list-inside mt-2 space-y-1">
-                        <li>Developed user-friendly interfaces for an AI-driven nutrition tracking platform using Next.js, React, and Material UI</li>
-                        <li>Implemented backend services with Python and FastAPI for data handling and MongoDB integration</li>
-                        <li>Utilized Firebase for real-time synchronization and authentication</li>
-                        <li>Containerized applications with Docker and deployed via GitHub and AWS</li>
-                      </ul>
-                    </div>
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="font-semibold text-lg border-b border-gray-400 dark:border-gray-700 pb-2">Retail Sales Associate</h4>
-                      <p className="text-base text-gray-600 dark:text-gray-400 pt-2">Lawtons Drugs</p>
-                      <p className="text-base">May 2022 - Present</p>
-                      <ul className="list-disc list-inside mt-2 space-y-1">
-                        <li>Enhanced customer experience and streamlined transactions</li>
-                        <li>Trained new staff and resolved customer complaints</li>
-                        <li>Utilized problem-solving skills to efficiently manage sales processes and loyalty programs</li>
-                      </ul>
-                    </div>
-                    <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
-                      <h4 className="font-semibold text-lg border-b border-gray-400 dark:border-gray-700 pb-2">Sales Representative</h4>
-                      <p className="text-base text-gray-600 dark:text-gray-400 pt-2">Telus/Koodo Mobile</p>
-                      <p className="text-base">Nov 2022 - Mar 2023</p>
-                      <ul className="list-disc list-inside mt-2 space-y-1">
-                        <li>Achieved sales targets and negotiated contracts to enhance customer satisfaction</li>
-                        <li>Collaborated with colleagues to identify new opportunities for upselling and optimize processes</li>
-                      </ul>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
+              <Experience/>
+            </TabsContent>
+            <TabsContent value="certifications">
+              <Certifications/>
             </TabsContent>
           </Tabs>
         </section>
