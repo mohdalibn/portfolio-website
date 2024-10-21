@@ -16,45 +16,51 @@ export default function Projects(){
               title: "Stock Trading Simulator", 
               description: "A full-stack web competitive stock trading simulation game with interactive UI and RESTful API backend.",
               tech: "JavaScript, HTML, CSS, MongoDB, Express, Node, jQuery, Supertest",
+              image: "/ChromDinoAIMainImg.png",
               repo: "#"
             },
             { 
               title: "Ultimate Tic Tac Toe Multiplayer", 
               description: "Multiplayer game with nested 3x3 grids, user authentication, matchmaking, and leaderboards.",
               tech: "Python, Bottle, HTML, CSS, Shelve, Unittest",
+              image: "",
               repo: "#"
             },
             { 
               title: "Online Book Database", 
               description: "Full-stack online bookstore application with CRUD operations for book entries.",
               tech: "JavaScript, HTML, CSS, MongoDB(Atlas), Express, React, Node, Tailwind",
+              image: "",
               repo: "https://github.com/mohdalibn/online-book-database"
             },
             { 
               title: "Gesture Volume Controller", 
               description: "Desktop app for controlling system volume using hand gestures detected via webcam.",
               tech: "Python, OpenCV, Mediapipe, NumPy, EEL, HTML, CSS, JavaScript, Figma",
+              image: "",
               repo: "https://github.com/mohdalibn/gesture-volume-controller"
             },
             { 
               title: "Real-time Ball Tracking Game", 
               description: "Unity game integrating real-time ball tracking via webcam to control in-game physics.",
               tech: "Python, OpenCV, Mediapipe, EEL, HTML, CSS, JavaScript, Figma",
+              image: "",
               repo: "https://github.com/mohdalibn/real-time-ball-tracking-game"
             },
             { 
               title: "Face Detector App", 
               description: "Desktop application for detecting faces in images and live video feeds.",
               tech: "Python, OpenCV, Mediapipe, EEL, HTML, CSS, JavaScript, Figma",
+              image: "",
               repo:  "https://github.com/mohdalibn/face-detector-app"
             }
           ].map((project, index) => (
-            <Card key={index} className="flex flex-col">
+            <Card key={index} className="flex flex-col ">
               <Image
                 // src={`/placeholder.svg?height=200&width=300&text=Project+${index + 1}`}
-                src={"/Gesture Volume Controller App.png"}
+                src={project.image}
                 alt={project.title}
-                width={300}
+                width={280}
                 height={200}
                 className="w-full h-48 object-cover" />
               <CardContent className="p-4 flex-grow">

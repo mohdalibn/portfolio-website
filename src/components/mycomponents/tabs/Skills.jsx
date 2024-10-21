@@ -14,7 +14,7 @@ export default function Skills(){
             <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Languages</h4>
                 <div className="flex flex-wrap gap-2 pt-2">
-                {["Python", "Java", "HTML", "CSS", "JavaScript", "C/C++", "SQLite", "MongoDB"].map((skill) => (
+                {["Python", "Java", "HTML", "CSS", "JavaScript/TypeScript", "C/C++"].map((skill) => (
                     <Badge key={skill} variant="outline">{skill}</Badge>
                 ))}
                 </div>
@@ -30,7 +30,7 @@ export default function Skills(){
             <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Developer Tools</h4>
                 <div className="flex flex-wrap gap-2 pt-2">
-                {["VS Code", "PyCharm", "Jupyter", "Git", "Linux", "Unit Testing", "Docker", "Postman", "Figma"].map((skill) => (
+                {["VS Code", "PyCharm", "Jupyter", "Git", "Linux", "Unit Testing", "Docker", "Postman", "Figma", "Agile Methodologies"].map((skill) => (
                     <Badge key={skill} variant="outline">{skill}</Badge>
                 ))}
                 </div>
@@ -43,10 +43,20 @@ export default function Skills(){
                 ))}
                 </div>
             </div>
+
+            <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
+                <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Databases</h4>
+                <div className="flex flex-wrap gap-2 pt-2">
+                {["MongoDB", "SQLite", "PostgreSQL", "MySQL"].map((skill) => (
+                    <Badge key={skill} variant="outline">{skill}</Badge>
+                ))}
+                </div>
+            </div>
+
             <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Areas of Interest</h4>
                 <div className="flex flex-wrap gap-2 pt-2">
-                {["Full-Stack Web Development", "AI/ML Applications", "Computer Vision", "Data Analysis", "UI/UX Design"].map((skill) => (
+                {["Full-Stack Web Development", "AI/ML Applications", "Computer Vision", "Mobile App Development", "Data Analysis", "UI/UX Design"].map((skill) => (
                     <Badge key={skill} variant="outline">{skill}</Badge>
                 ))}
                 </div>

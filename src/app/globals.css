@@ -6,13 +6,13 @@
   font-family: Arial, Helvetica, sans-serif;
 } */
 
-/* body {
+body {
   font-family: var(--font-geist-sans), sans-serif;
-} */
-
-html, body {
-  font-family: var(--var-manrope), sans-serif;
 }
+
+/* html, body {
+  font-family: var(--var-manrope), sans-serif;
+} */
 
 /* html, body {
   font-family: var(--font-geomanist), sans-serif;
