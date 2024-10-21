@@ -3,12 +3,25 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
 import Image from "next/image";
+import { motion } from 'framer-motion';
+
+const fadeInFromLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } 
+};
 
 export default function Projects(){
 
     return (
         
-        <section id="projects" className="mb-16 pt-16 -mt-16">
+        <motion.section
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={fadeInFromLeft}
+        id="projects" 
+        className="mb-16 pt-16 -mt-16">
+
         <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {[
@@ -78,7 +91,7 @@ export default function Projects(){
             </Card>
           ))}
         </div>
-      </section>
+      </motion.section>
 
     )
 

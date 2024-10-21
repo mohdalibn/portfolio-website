@@ -5,7 +5,7 @@ import { ThemeProvider } from 'next-themes';
 export default function Home() {
   return (
 
-    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="light">
+    <ThemeProvider attribute="class" enableSystem={false} defaultTheme="dark">
           <PortfolioComponent/> 
     </ThemeProvider>
 

@@ -4,12 +4,25 @@ import Experience from "./tabs/Experience"
 import Education from "./tabs/Education"
 import Skills from "./tabs/Skills"
 import Certifications from "./tabs/Certifications"
+import { motion } from 'framer-motion';
+
+const fadeInFromLeft = {
+  hidden: { opacity: 0, x: -50 },
+  visible: { opacity: 1, x: 0, transition: { duration: 0.8 } } 
+};
 
 export default function About(){
 
     return (
 
-        <section id="about" className="mb-16 pt-16 -mt-16">
+        <motion.section       
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={fadeInFromLeft}
+        id="about"
+        className="mb-16 pt-16 -mt-16">
+
           <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
           <div className="max-w-3xl mx-auto space-y-6">
           <p className="text-center dark:font-thin">
@@ -35,7 +48,7 @@ export default function About(){
                 <TabsTrigger
                   key={tab}
                   value={tab}
-                  className="flex-1 py-2 px-4 rounded-md data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 transition-all">
+                  className="flex-1 py-2 px-4 rounded-md data-[state=active]:bg-white dark:data-[state=active]:bg-gray-700 transition-all font-bold">
                   {tab.charAt(0).toUpperCase() + tab.slice(1)}
                 </TabsTrigger>
               ))}
@@ -53,7 +66,7 @@ export default function About(){
               <Certifications/>
             </TabsContent>
           </Tabs>
-        </section>
+        </motion.section>
 
     )
 
