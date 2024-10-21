@@ -38,7 +38,7 @@ export default function Skills(){
             <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">DevOps</h4>
                 <div className="flex flex-wrap gap-2 pt-2">
-                {["Git", "Github", "Github Actions", "Github Projects", "Jira", "BitBucket", "Docker", "AWS"].map((skill) => (
+                {["Github", "Github Actions", "Github Projects", "Jira", "BitBucket", "Docker"].map((skill) => (
                     <Badge key={skill} variant="outline">{skill}</Badge>
                 ))}
                 </div>
@@ -56,7 +56,7 @@ export default function Skills(){
             <div className="bg-gray-100 dark:bg-gray-800 p-4 rounded-lg">
                 <h4 className="text-lg font-medium mb-3 border-b border-gray-400 dark:border-gray-700 pb-2">Areas of Interest</h4>
                 <div className="flex flex-wrap gap-2 pt-2">
-                {["Full-Stack Web Development", "AI/ML Applications", "Computer Vision", "Mobile App Development", "Data Analysis", "UI/UX Design"].map((skill) => (
+                {["Full-Stack Web Development", "Computer Vision", "AI/ML Applications", "Mobile App Development", "Data Analysis", "UI/UX Design"].map((skill) => (
                     <Badge key={skill} variant="outline">{skill}</Badge>
                 ))}
                 </div>
