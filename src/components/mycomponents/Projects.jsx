@@ -29,28 +29,28 @@ export default function Projects(){
               title: "TaskTide Mobile App", 
               description: "A full-stack web competitive stock trading simulation game with interactive UI and RESTful API backend.",
               tech: "React Native, Expo, JavaScript, CSS",
-              image: "/TaskTideApp.png",
+              image: "./TaskTideApp.png",
               repo: "https://github.com/mohdalibn/todo-react-native-app"
             },
             { 
               title: "Portfolio Website", 
               description: "A full-stack web competitive stock trading simulation game with interactive UI and RESTful API backend.",
               tech: "JavaScript, HTML, CSS, MongoDB, Express, Node, jQuery, Supertest",
-              image: "/PortfolioWebsite.png",
+              image: "./PortfolioWebsite.png",
               repo: "https://github.com/mohdalibn/portfolio-website"
             },
             { 
               title: "Trading Aplha Inc. (Private)", 
               description: "A full-stack web competitive stock trading simulation game with interactive UI and RESTful API backend.",
               tech: "JavaScript, HTML, CSS, MongoDB, Express, Node, jQuery, Supertest",
-              image: "/TradingAlpha.png",
+              image: "./TradingAlpha.png",
               repo: ""
             },
             { 
               title: "Ultimate Tic Tac Toe Multiplayer (Private)", 
               description: "Multiplayer game with nested 3x3 grids, user authentication, matchmaking, and leaderboards.",
               tech: "Python, Bottle, HTML, CSS, Shelve, Unittest",
-              image: "/UltimateTicTacToe.png",
+              image: "./UltimateTicTacToe.png",
               repo: ""
             },
             // { 
@@ -64,35 +64,35 @@ export default function Projects(){
               title: "Gesture Volume Controller", 
               description: "Desktop app for controlling system volume using hand gestures detected via webcam.",
               tech: "Python, OpenCV, Mediapipe, NumPy, EEL, HTML, CSS, JavaScript, Figma",
-              image: "/Gesture Volume Controller App.png",
+              image: "./Gesture Volume Controller App.png",
               repo: "https://github.com/mohdalibn/gesture-volume-controller-app"
             },
             { 
               title: "Real-time Ball Tracking Game", 
               description: "Unity game integrating real-time ball tracking via webcam to control in-game physics.",
               tech: "Python, OpenCV, Mediapipe, EEL, HTML, CSS, JavaScript, Figma",
-              image: "/BallTrackingGame.png",
+              image: "./BallTrackingGame.png",
               repo: "https://github.com/mohdalibn/real-time-ball-tracking-game"
             },
             { 
               title: "Face Detector App", 
               description: "Desktop application for detecting faces in images and live video feeds.",
               tech: "Python, OpenCV, Mediapipe, EEL, HTML, CSS, JavaScript, Figma",
-              image: "/FaceDetectorApp.png",
+              image: "./FaceDetectorApp.png",
               repo:  "https://github.com/mohdalibn/face-detector-app"
             },
             { 
               title: "Flappy Bird Replica AI", 
               description: "An app in which the user can train and test neural networks that are able to play the iconic game flappy bird",
               tech: "Python, PyGame, NEAT (Genetic Algorithm), Figma",
-              image: "/FlappyBirdAI.png",
+              image: "./FlappyBirdAI.png",
               repo: "https://github.com/mohdalibn/flappy-bird-game-ai"
             },
             { 
               title: "Chrome Dino Replica AI", 
               description: "An app in which the user can train and test neural networks that are able to play the google chrome dinosaur game",
               tech: "Python, PyGame, NEAT (Genetic Algorithm), Figma",
-              image: "/ChromeDinoAI.png",
+              image: "./ChromeDinoAI.png",
               repo: "https://github.com/mohdalibn/chrome-dinosaur-game-ai"
             }
 

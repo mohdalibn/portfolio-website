@@ -40,7 +40,7 @@ export default function Hero(){
               </div>
               <div className="md:w-auto flex justify-center">
                 <Image
-                  src="/pp2.jpg"
+                  src="./pp2.jpg"
                   alt="Mohd Ali Bin Naser"
                   width={350}
                   height={350}
