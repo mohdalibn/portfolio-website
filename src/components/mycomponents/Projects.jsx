@@ -44,14 +44,14 @@ export default function Projects(){
               description: "A full-stack web competitive stock trading simulation game with interactive UI and RESTful API backend.",
               tech: "JavaScript, HTML, CSS, MongoDB, Express, Node, jQuery, Supertest",
               image: "./TradingAlpha.png",
-              repo: ""
+              repo: "https://github.com/mohdalibn/trading-alpha"
             },
             { 
               title: "Ultimate Tic Tac Toe Multiplayer (Private)", 
               description: "Multiplayer game with nested 3x3 grids, user authentication, matchmaking, and leaderboards.",
               tech: "Python, Bottle, HTML, CSS, Shelve, Unittest",
               image: "./UltimateTicTacToe.png",
-              repo: ""
+              repo: "https://github.com/mohdalibn/ultimate-ttt--group-project"
             },
             // { 
             //   title: "Online Book Database", 
