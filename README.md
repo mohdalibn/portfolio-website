@@ -1,3 +1,8 @@
+
+![PortfolioWebsite](https://github.com/user-attachments/assets/bec009a1-674f-4ea5-ab77-582261e062a2)
+
+# My Portfolio Website
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
