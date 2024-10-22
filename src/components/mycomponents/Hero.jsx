@@ -29,7 +29,7 @@ export default function Hero(){
                 <p className="text-l sm:text-xl mb-8 font-light dark:font-thin">
                   Thanks for stopping by! This portfolio is a glimpse into what drives my passion for coding and problem-solving. My hope is that as you explore, you’ll get a better sense of who I am and the fun behind each project. Take your time, and I hope you enjoy the journey as much as I did creating it!
                 </p>
-                <Link href="#">
+                <Link href="https://drive.google.com/file/d/1c82FNE_gwwapvJ94GMtcWbAaoeF8IHfr/view?usp=sharing">
                   <Button className="mr-4 border-2 dark:border-1 border-black dark:border-white bg-transparent text-black dark:text-white text-lg px-6 py-6 rounded-lg hover:bg-slate-200 dark:hover:bg-slate-800">Get Resume</Button>
                 </Link>
                 
